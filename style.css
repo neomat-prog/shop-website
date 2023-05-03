@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'Vogue';
+    src: url(Vogue.ttf);
+}
+
+
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+
+body {
+    display: block;
+    min-height: 100vh;
+    align-items: center;
+    margin: 0;
+    z-index: 1;
+    min-height:100%;
+    overflow:scroll;
+   
+   max-height: 1080px;
+    max-width: 1920px; 
+    margin-right: auto;
+    margin-left: auto;
+    overflow-x: hidden;
+    
+    
+    overflow-y: scroll;
+    scrollbar-track-color: #fff;
+    scrollbar-width: 2em;
+    
+}
+
+
+
+.gang {
+  
+  position: relative;
+  z-index: 3;
+  
+
+}
+
+
+.Klasyk {
+  color: white;
+  font-size: 180px;
+  font-family: Vogue, Arial;
+  position: absolute;
+  text-align: justify;
+  top: 320px;
+  left: 205.9px;
+ 
+  width: 100%;
+  z-index: 4;
+   
+
+    animation: Klasyk  3000ms ease-in-out forwards 200ms,
+    glow 2500ms linear infinite 2000ms;
+    
+}
+
+@keyframes Klasyk {
+    100%{
+      letter-spacing: 1px;
+    }
+    10% {
+      background-size: 10%;
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #fff;
+    }
+  }
+  
+.information {
+  width: 1250px;
+  position: absolute;
+  color: white;
+  font-family: Judson, Arial;
+  font-size: 40px;
+  text-align: center;
+  top: 600px;
+  left: 330px;
+  z-index: 4;
+
+  animation: information  3000ms ease-in-out forwards 200ms,
+    glow 2500ms linear infinite 2000ms;
+
+}
+
+@keyframes information {
+    80%{
+      letter-spacing: 0;
+    }
+    10% {
+      background-size: 10%;
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #fff;
+    }
+  }
+
+.notification {
+  position: fixed;
+  size-adjust: none;
+}
+
+.cart {
+  position: relative;
+  height: 80px;
+  top: -90px;
+  right: -1760px;
+}
+
+.cart:hover {
+  opacity: 0.8;
+  cursor: pointer;
+
+}
+
+.logo {
+  
+  height: 0px;
+}
+
+.notification {
+  text-align: center;
+  background-color: black;
+  position: absolute;
+  top: 18px;
+  right: 60px;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  color: white;
+  padding-left: -2px;
+  padding-top:2px;
+  padding-bottom: -2px;
+  padding-right: 2px;
+}
+
+.images {
+  display: block;
+  padding:0;
+  margin:0; 
+
+}
+
+
+
+.Szyjemy {
+  position: relative;
+  left: 120px;
+  font-family: Vogue, Arial;
+  font-size: 180px;
+  text-align: center;
+  width: 575.5px;
+}
+
+.Marka-vintage {
+  text-indent: 40px;
+  position: relative;
+  font-family: Judson, Arial;
+  font-size: 40px;
+  width: 520px;
+  top: -120px;
+  left: 120px;
+  
+}
+
+.standing {
+  
+  position: relative;
+  float: right;
+  width: 50%;
+  z-index: 1;
+  top: -10px;
+  left: 17px;
+  animation: standing 3s linear;
+}
+
+@keyframes standing {
+  0%   { 
+  transform: translateX(200%); 		
+  }
+  100% { 
+  transform: translateX(0%); 
+  }
+ }
+
+ .suit {
+  position: relative;
+  top: -10px;
+  left: 0px;
+  width: 968px;
+  z-index: 1;
+  margin-bottom: 0;
+  animation: suit 3s linear;
+ }
+
+ @keyframes suit {
+  0%   { 
+  transform: translateY(100%); 		
+  }
+  100% { 
+  transform: translateY(0%); 
+  }
+ }
+
+ .Szycie-pasja {
+  position: relative;
+  top: -2400px;
+  z-index: 2;
+ }
+
+.Wysoka {
+  position: relative;
+  color: black;
+  font-family: Vogue, Arial;
+  font-size: 180px;
+  width: 100px;
+  top: -2400px;
+  left: 1150px;
+  z-index: 4;
+}
+
+.przystepna-cena {
+  text-indent: 40px;
+  position: relative;
+  font-family: Judson, Arial;
+  font-size: 40px;
+  width: 555px;
+  top: -2500px;
+  left: 1150px;
+  z-index: 4;
+}
